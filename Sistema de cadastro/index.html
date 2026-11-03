@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login | Sistema de Castro</title>
+	<link rel="stylesheet" type="text/css" href="css/stayle.css?v=2">
+</head>
+<body>
+	<!--LOGIN-->
+	<div id="container">
+		<!--CONTAINER_INFO-->
+		<div class="container_info">
+			<!--CONTAINER_INFO_TEXT-->
+			<div class="container_info_text">
+				<h2>Inscreva-se</h2>
+				<div class="line"></div>
+			</div>
+			<!--FIM CONTAINER_INFO_TEXT-->
+			<div class="set" onclick="open_form_cadastro()">
+				<h3>></h3>
+			</div>
+		</div>
+		<!--FIM CONTAINER_INFO-->
+
+		<!--CONTAINER_FORM-->
+		<div class="container_form">
+			<form>
+				<div id="msgLogin"></div>
+				<label>Usuário</label>
+				<input type="email" placeholder="E-mail de Usuário" id="user">
+				<label>Senha</label>
+				<input type="password" placeholder="Senha de acesso" id="pass">
+
+				<div class="btn_option">
+					<button type="button" onclick="login()">Entrar</button>
+					<a href="#"><p>Esqueceu a senha?</p></a>
+				</div>
+				
+			</form>
+		</div>
+		<!--FIM CONTAINER_FORM-->
+	</div>
+	<!--FIM DE LOGIN-->
+
+	<!--CADASTRO-->
+	<div id="container_cadastro">
+		<div class="form_cadastro">
+			<h2>Formulário de cadastro</h2>
+			<p>Preencha todos os campos obrigatórios <b>(*)</b></p>
+			<form id="form_cadastro1">
+				<div class="input_form">
+					<label>Nome *</label>
+					<input type="text" placeholder="Seu nome" id="nome_cadastro">
+				</div>
+
+				<div class="input_form">
+					<label>Telefone *</label>
+					<input type="tel" placeholder="Número de telefone *" id="tel_cadastro">
+				</div>
+
+				<div class="input_form">
+					<label>E-mail *</label>
+					<input type="email" placeholder="Endereço de e-mail" id="email_cadastro">
+				</div>
+
+				<div class="input_form">
+					<label>Endereço (Opcional)</label>
+					<input type="text" placeholder="Endereço de morada" id="endereco_cadastro">
+				</div>
+
+				<div class="input_form">
+					<label>Senha *</label>
+					<input type="password" placeholder="Crié uma senha" id="senha_cadastro">
+				</div>
+
+				<div class="input_form">
+					<label>Repete a Senha *</label>
+					<input type="password" placeholder="Confirme a senha" id="rsenha_cadastro">
+				</div>
+
+				<div id="msgCadastro"></div>
+
+				<div class="btn_link_form">
+					<div class="btn_form">
+						<button type="button" onclick="cadastro()">Efectuar Cadastro</button>
+					</div>
+					<div class="link_form">
+						<p><a href="#" onclick="open_form_login()">Iniciar Sessão</a></p>
+					</div>
+				</div>
+
+			</form>
+		</div>
+		
+	</div>
+	<!--FIM DE CADASTRO-->
+
+	<script src="js/jquery.js"></script>
+	<script src="js/script.js?v=3"></script>
+</body>
+</html>
